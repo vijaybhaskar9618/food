@@ -1,0 +1,837 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    word-spacing: 2px;
+    scroll-padding-top: 100px;
+}
+
+body {
+    
+    a{
+        text-decoration: none;
+        
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .omnifood {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+        background-color: rgba(226, 224, 224, 0.115);
+
+        .header {
+            background-color: rgb(255, 246, 235);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .navbar {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                gap: 800px;
+
+                .homeimg {
+                    width: 160px;
+                    height: 25px;
+                    cursor: pointer;
+
+                }
+
+                .navside {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+
+
+
+                    .n1 {
+                        font-size: 17px;
+                        font-weight: bold;
+                        color: rgb(66, 66, 66);
+                        cursor: pointer;
+                    }
+
+                    .n2 {
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: white;
+                        text-align: center;
+                        padding: 6px 10px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        background-color: rgb(255, 132, 0);
+                        border-radius: 6px;
+                    }
+
+                    .n2:hover {
+                        color: rgb(55, 55, 55);
+                    }
+
+                    .n1:hover {
+                        color: rgb(255, 132, 0);
+                    }
+
+                }
+            }
+
+            .navbar.sticky {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(255, 255, 255, 0.953);
+                z-index: 1000;
+            }
+
+            .headerdis {
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+                padding: 40px 150px 100px 150px;
+
+                .b1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 40px;
+                    padding: 10px;
+
+                    .head {
+                        font-size: 60px;
+                        font-weight: bolder;
+                        color: rgba(13, 13, 13, 0.819);
+                        line-height: 60px;
+                        font-weight: bolder;
+
+                    }
+
+                    .disc {
+                        font-size: 20px;
+                        color: gray;
+
+                    }
+
+                    .clickb {
+
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        gap: 40px;
+
+                        .sew {
+
+                            font-size: 20px;
+                            font-weight: bold;
+                            color: white;
+                            text-align: center;
+                            padding: 6px 16px;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            background-color: rgb(255, 132, 0);
+                            border-radius: 6px;
+
+                        }
+
+                        .sew:hover {
+                            background-color: rgb(71, 107, 238);
+
+                        }
+
+                        .lm {
+                            display: flex;
+                            font-size: 20px;
+                            color: rgb(0, 0, 0);
+                            text-align: center;
+                            padding: 6px 16px;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            background-color: rgb(255, 255, 255);
+                            border-radius: 6px;
+
+                        }
+
+                        .lm:hover {
+                            color: rgb(255, 255, 255);
+                            background-color: rgb(54, 79, 243);
+
+                        }
+
+                    }
+
+                    .btm {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 200px;
+
+                        .slg {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: start;
+                            position: relative;
+
+
+                            img {
+                                border-radius: 50%;
+                                height: 50px;
+                            }
+
+                            .cir1 {
+                                position: relative;
+                                z-index: 1;
+
+                            }
+
+                            .cir2 {
+                                z-index: 3;
+                                position: absolute;
+                                left: 30px;
+                                border: 3px solid white;
+                            }
+
+                            .cir3 {
+                                z-index: 4;
+                                position: absolute;
+                                left: 60px;
+                                border: 3px solid white;
+                            }
+
+                            .cir4 {
+                                z-index: 5;
+                                position: absolute;
+                                left: 90px;
+                                border: 3px solid white;
+                            }
+
+                            .cir5 {
+                                z-index: 6;
+                                position: absolute;
+                                left: 120px;
+                                border: 3px solid white;
+                            }
+
+                            .cir6 {
+                                z-index: 7;
+                                position: absolute;
+                                left: 150px;
+                                border: 3px solid white;
+                            }
+
+
+
+
+                        }
+
+                        .med {
+                            font-size: 18px;
+                            font-weight: bold;
+
+                        }
+
+                        .med::before {
+                            content: "250,000+  ";
+                            color: orange;
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                    }
+
+                }
+
+                .img3 {
+                    height: 560px;
+                    width: 800px;
+                }
+            }
+
+        }
+
+        .asfeature {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+
+            .asf {
+                font-size: 15px;
+                color: gray;
+                font-weight: 700;
+            }
+
+            .img5 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+
+                img {
+
+                    height: 30px;
+                    filter: grayscale(100%) opacity(70%)
+                }
+            }
+        }
+
+        .howit,
+        .meals {
+
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+            .work,
+            .mealshead {
+                color: orange;
+                font-size: 25px;
+            }
+
+            .wdis,
+            .mealsdis {
+                font-size: 45px;
+                font-weight: bold;
+            }
+        }
+
+        .mainsimple {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            .simple1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 80px;
+                padding: 10px 230px;
+
+
+                .box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 30px;
+                    padding: 10px;
+
+                    .s1 {
+                        font-size: 70px;
+                        color: rgba(128, 128, 128, 0.874);
+                    }
+
+                    .shead {
+                        font-size: 40px;
+                        font-weight: bold;
+                    }
+
+                    .sdis {
+                        color: gray;
+                    }
+                }
+
+                .sim111,
+                .sim222,
+                .sim333 {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 30px;
+
+
+                    .sim1 {
+                        height: 400px;
+                        position: relative;
+                        z-index: 10;
+                    }
+
+                    .ssi1 {
+                        position: absolute;
+                        z-index: 9;
+                        border-radius: 70%;
+                        height: 300px;
+                        width: 380px;
+                        background: radial-gradient(rgb(245, 213, 179)50%, rgb(255, 246, 235) 20%);
+
+                    }
+                }
+            }
+
+        }
+
+        .meals {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .maincards {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+
+            .cardss {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 100px;
+
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    color: gray;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    transition: transform 0.3s;
+
+
+
+                    .vv {
+                        height: 300px;
+                        width: 350px;
+                    }
+
+                    .carddtls {
+                        display: flex;
+                        justify-content: center;
+                        background-color: white;
+                        padding: 30px;
+
+                        .cardh {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: start;
+                            gap: 10px;
+
+
+                        }
+                    }
+
+                }
+
+                .card:hover {
+                    transform: translateY(-13px);
+                    cursor: pointer;
+                    box-shadow: 10px 6px 10px;
+
+                }
+            }
+
+            .diets {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                gap: 25px;
+
+                .cla {
+                    font-size: 33px;
+                    font-weight: bold;
+                    padding: 0px 0px 30px;
+                }
+
+                .diet {
+
+                    color: rgb(99, 98, 98);
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+
+                .diet::before {
+                    content: "✓  ";
+                    font-size: 30px;
+                    color: orange;
+
+                }
+            }
+
+            .seeall {
+                color: orange;
+
+                text-decoration: underline;
+                text-underline-offset: 10px;
+                text-decoration-color: rgba(247, 184, 69, 0.533);
+            }
+        }
+
+        .maingrid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            align-items: start;
+            gap: 100px;
+            background-color: rgb(255, 246, 235);
+            padding: 10px 80px;
+
+            .gbox1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 100px;
+                padding: 40PX 60px;
+
+
+                .ghead {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 10px;
+
+                    .gh1 {
+                        color: rgb(251, 170, 19);
+                    }
+
+                    .gh2 {
+                        font-size: 45px;
+                        font-weight: bold;
+                        color: rgb(36, 35, 35);
+                    }
+                }
+
+                .b1grid {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 60px;
+
+                    .gcard {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        color: gray;
+
+                        img {
+                            border-radius: 50%;
+                            height: 70PX;
+                            width: 70pX;
+                        }
+
+                    }
+                }
+            }
+
+            .gbox2 {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                padding: 10px 32px;
+                gap: 17px;
+
+                img {
+                    border-radius: 10px;
+                    height: 200px;
+                    transition: 0.3s ease;
+                }
+
+                :is(.grdidimg1, .grdidimg2, .grdidimg3, .grdidimg4, .grdidimg5, .grdidimg6, .grdidimg7, .grdidimg8, .grdidimg9, .grdidimg10, .grdidimg11, .grdidimg12):hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+
+
+
+            }
+
+        }
+
+        .pricing {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+
+            .pricingg {
+                color: rgb(255, 166, 0);
+            }
+
+            .priceslg {
+                font-size: 50px;
+                font-weight: bold;
+                color: rgb(27, 27, 27);
+            }
+
+        }
+
+        .mprscds {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+
+            .prccards {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+
+                .prscard1,
+                .prscard2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                    gap: 23px;
+                    border: 1px solid rgba(255, 166, 0, 0.515);
+                    color: gray;
+                    border-radius: 15px;
+                    padding: 35px;
+
+                    .pcardh {
+                        color: orange;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    .prc {
+
+                        text-align: center;
+                        font-size: 25px;
+                        font-weight: 600;
+                        color: rgb(20, 20, 20);
+
+                        sub {
+                            color: rgb(20, 20, 20);
+                            font-weight: 600;
+                        }
+
+                    }
+
+                    .sew1 {
+                        margin: 20px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        color: white;
+                        text-align: center;
+                        padding: 6px 16px;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        background-color: rgb(255, 132, 0);
+                        border-radius: 6px;
+
+                    }
+
+                    .sew1:hover {
+
+                        background-color: rgb(68, 106, 241);
+
+                    }
+
+
+                }
+
+                .prscard2 {
+                    background-color: rgb(255, 246, 235);
+                    color: rgb(107, 106, 106);
+                }
+
+                .prcof::before {
+                    content: "✓  ";
+                    color: orange;
+                    font-size: 30px;
+                }
+
+                .prcof1::before {
+                    content: "✕ ";
+                    color: orange;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .logs4 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 40px;
+            padding: 30PX 120PX;
+
+            .lg1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                gap: 30px;
+
+                img {
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+
+                .lgh {
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .gradimg {
+           
+            padding: 10px 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .grrimg {
+               
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                border-radius: 30px;
+                overflow: hidden;
+               
+                .clr {
+                    background:
+                        linear-gradient(to bottom, rgba(185, 117, 15, 0.46), rgba(255, 100, 11, 0.236)),
+                        url("https://omnifood.dev/img/eating.jpg");
+                    background-size: cover;
+                   
+                    height: 475px;
+                    width: 800px;
+                }
+
+                .b1 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 50px;
+                    background-color: rgb(216, 128, 33);
+                    padding: 50px;
+                  
+
+                    .bh {
+                        font-size: 43px;
+                        font-weight: bold;
+                        color: rgb(87, 48, 24);
+                    }
+
+
+                    .frm {
+
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 30px;
+
+                    }
+
+                    .frm1 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: start;
+                        font-size: 15px;
+                        gap: 10px;
+
+                        input,
+                        select {
+                            font-size: 18px;
+                            height: 50px;
+                            width: 320px;
+                            outline: none;
+                            border: none;
+                            border-radius: 10px;
+                            padding: 5px 10px;
+                        }
+
+                        .sub {
+                            background-color: rgb(69, 26, 26);
+                            font-size: 20px;
+                            color: white;
+                            font-weight: bold;
+                        }
+
+                        .sub:hover {
+                            background-color: white;
+                            color: rgb(49, 48, 48);
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+            gap: 30px;
+            padding: 80px 40px;
+
+            .b1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+                color: gray;
+
+
+                img {
+                    height: 20px;
+                    width: 140px;
+                }
+
+                #icc {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    align-items: start;
+                    gap: 20px;
+                }
+
+                .fh {
+                    font-size: 24px;
+                    color: rgb(89, 89, 89);
+                    font-weight: bold;
+                }
+
+            }
+
+        }
+
+    }
+}
